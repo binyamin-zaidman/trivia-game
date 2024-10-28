@@ -36,7 +36,7 @@ function avg() {
       const userName = row.insertCell(0);
       const userScore = row.insertCell(1);
       userName.innerHTML = user.name;
-      userScore.innerHTML = sum.toFixed(2); 
+      userScore.innerHTML = sum.toFixed(2);
       result.push({ name: user.name, score: sum });
     }
     counter = 0;
@@ -52,18 +52,16 @@ function resetScore() {
 function toGame() {
   document.getElementById("goToGame").addEventListener("click", () => {
     resetScore();
-    window.location.href = "index.html";
+    window.location.href = "game.html";
   });
 }
 
 function sineUp() {
   document.getElementById("sineUp").addEventListener("click", () => {
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     current.remove();
   });
 }
-
-
 
 toGame();
 sineUp();

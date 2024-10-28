@@ -207,7 +207,7 @@ function showGameOver() {
   playAgainBtn.addEventListener("click", () => {
     currUser.score = 0;
     localStorage.setItem("currUser", JSON.stringify(currUser));
-    window.location.href = "index.html";
+    window.location.href = "game.html";
   });
   divOver.appendChild(playAgainBtn);
 
